@@ -12,7 +12,7 @@ def profilepage(request):
     
 
 def servicepage(request):
-    return render (request, "servicepage.html") 
+    return render (request, "servicepage.html")
 
 
 def helppage(request):
