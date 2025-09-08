@@ -1,0 +1,15 @@
+{% extends "partials/base.html" %}
+
+{% block title %}
+Blog
+{% endblock title %}
+
+
+{% block body %}
+    <ul>
+        {% for blog in blogs %}
+            <li>{{blog.title}}</li>
+            <li>{{blog.content}}</li>
+        {% endfor %}
+    </ul>
+{% endblock body %}

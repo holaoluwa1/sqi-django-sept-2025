@@ -1,0 +1,15 @@
+{% extends "partials/base.html" %}
+
+{% block title %}
+case Study
+{% endblock title %}
+
+
+{% block body %}
+    <ul>
+        {% for case_study in case_studies %}
+            <li>{{case_study.project}}</li>
+            <li>{{case_study.result}}</li>
+        {% endfor %}
+    </ul>
+{% endblock body %}
